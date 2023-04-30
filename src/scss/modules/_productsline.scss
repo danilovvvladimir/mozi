@@ -1,11 +1,58 @@
 .productsline {
   padding-top: 106px;
+  padding-bottom: 108px;
   border-top: 1px solid rgba(197, 203, 226, 0.5);
   &__title {
     text-align: center;
     margin-bottom: 16px;
   }
   &__subtitle {
+    text-align: center;
     margin-bottom: 97px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+      0px 25px 35px rgba(22, 23, 72, 0.08);
+    border-radius: 8px;
+    padding: 64px;
+    max-width: 520px;
+    height: 520px;
+    position: relative;
+  }
+  &__item-logo {
+    margin-bottom: 46px;
+  }
+  &__item-description {
+    font-size: 24px;
+    line-height: 31px;
+    color: #3a3a3c;
+    margin-bottom: 32px;
+  }
+  &__item-btn {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    svg {
+      margin-right: 10px;
+    }
+    path {
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+  &__item-review {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
   }
 }

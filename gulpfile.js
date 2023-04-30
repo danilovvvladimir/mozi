@@ -91,6 +91,8 @@ function css() {
 function js() {
   return src([
     // "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/swiper/swiper-bundle.min.js",
+
     path.src.js,
   ])
     .pipe(concat("main.min.js"))

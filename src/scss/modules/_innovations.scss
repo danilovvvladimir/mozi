@@ -1,0 +1,44 @@
+.innovations {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__slide-wrapper {
+    justify-content: space-between;
+  }
+  &__slide-content {
+    margin: 50px 0;
+    width: 256px;
+    height: 119px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgba(22, 23, 72, 0.07),
+      0px 5px 15px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+  &__button {
+    cursor: pointer;
+    path {
+      stroke: $text-color;
+    }
+  }
+  &__button--prev {
+    svg {
+      rotate: 180deg;
+    }
+  }
+  &__button--next {
+  }
+}

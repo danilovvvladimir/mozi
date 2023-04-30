@@ -18,3 +18,16 @@ menu.addEventListener("click", (e) => {
     hamburger.classList.remove("is-active");
   }
 });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 4,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".innovations__button--next",
+    prevEl: ".innovations__button--prev",
+  },
+});

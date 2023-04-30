@@ -1,0 +1,56 @@
+.awards {
+  padding: 73px 0;
+  background: linear-gradient(
+    268.52deg,
+    #e3e7f6 -52.27%,
+    rgba(227, 231, 246, 0) 138.23%
+  );
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__images {
+    display: flex;
+    position: relative;
+    width: 558px;
+    height: 558px;
+    background-image: url(../images/decoration/decoration-awards.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+  }
+  &__imagebox {
+    width: 189px;
+    height: 178px;
+    background: #ffffff;
+    box-shadow: 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    &--performer {
+      top: 119px;
+      left: 0;
+    }
+    &--support {
+      top: 48px;
+      left: 220px;
+    }
+    &--business {
+      top: 324px;
+      left: 0;
+    }
+    &--nasscom {
+      top: 264px;
+      left: 220px;
+    }
+  }
+  &__content {
+    max-width: 397px;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+}
