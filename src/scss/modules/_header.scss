@@ -1,0 +1,46 @@
+.header {
+  padding-top: 24px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  &__list {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+  }
+  &__list-item {
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+  }
+  &__list-item-link {
+    color: #646a89;
+    transition: all 0.3s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -5px;
+      left: 51%;
+      background-color: $accent-color;
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      color: $accent-color;
+      &::before {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

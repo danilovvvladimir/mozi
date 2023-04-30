@@ -4,6 +4,12 @@ body {
   font-weight: 400;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1108px;
+}
+
 .title {
   color: $main-color;
   font-weight: 700;
@@ -25,9 +31,17 @@ body {
   background-color: transparent;
   border: 1px solid $accent-color;
   color: $accent-color;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $accent-color;
+  }
   &--filled {
     padding: 15px 33px;
     color: #fff;
     background-color: $accent-color;
+    &:hover {
+      background-color: #960726;
+    }
   }
 }
