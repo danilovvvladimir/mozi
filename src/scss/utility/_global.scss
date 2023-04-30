@@ -10,6 +10,13 @@ body {
   max-width: 1108px;
 }
 
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
 .title {
   color: $main-color;
   font-weight: 700;
@@ -43,5 +50,29 @@ body {
     &:hover {
       background-color: #960726;
     }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 450px;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 300px;
+    padding: 0 10px;
   }
 }

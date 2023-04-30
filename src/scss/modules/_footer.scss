@@ -82,3 +82,33 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    &__info {
+      margin-bottom: 30px;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__links {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &__links-block-title {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer {
+    &__info {
+      margin-bottom: 30px;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}
