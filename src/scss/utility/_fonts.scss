@@ -1,0 +1,23 @@
+@font-face {
+  // font-family: "Europa", sans-serif;
+  font-family: "Europa";
+  font-weight: 700;
+  src: local("Europa-Bold"),
+    url(../../fonts/europa-bold-webfont.woff2) format("woff2"),
+    url(../../fonts/europa-bold-webfont.woff) format("woff"),
+    url(../../fonts/europa-bold-webfont.ttf) format("truetype"),
+    url(../../fonts/europa-bold-webfont.eot) format("opentype"),
+    url(../../fonts/europa-bold-webfont.svg) format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Europa";
+  font-weight: 400;
+  src: local("Europa-Regular"),
+    url(../../fonts/europa-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/europa-regular-webfont.woff) format("woff"),
+    url(../../fonts/europa-regular-webfont.ttf) format("truetype"),
+    url(../../fonts/europa-regular-webfont.eot) format("opentype"),
+    url(../../fonts/europa-regular-webfont.svg) format("svg");
+  font-display: swap;
+}

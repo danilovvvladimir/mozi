@@ -1,0 +1,33 @@
+// шрифты, Favicon, header, footer
+body {
+  font-family: "Europa";
+  font-weight: 400;
+}
+
+.title {
+  color: $main-color;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 57px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: $text-color;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 150%;
+  padding: 14px 32px;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  &--filled {
+    padding: 15px 33px;
+    color: #fff;
+    background-color: $accent-color;
+  }
+}

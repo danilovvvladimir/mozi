@@ -48,7 +48,8 @@ const path = {
 function serve() {
   browserSync.init({
     server: {
-      baseDir: "./" + srcPath,
+      // baseDir: "./" + srcPath,
+      baseDir: "./" + distPath,
     },
   });
 }
