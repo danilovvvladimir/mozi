@@ -39,6 +39,70 @@
   <body>
     <!-- header -->
     @@include("html/_header.html", {})
+    <main class="home">
+      <!-- main -->
+      <section class="main home__main">
+        <div class="container">
+          <div class="main__content">
+            <h1 class="title main__title">
+              We build products to simplify work for businesses
+            </h1>
+            <div class="subtitle main__subtitle">
+              Our next-gen products empower businesses to implement agility and
+              accelerate growth.
+            </div>
+            <div class="main__buttons">
+              <a href="#" class="btn btn--filled">Learn more</a>
+              <a href="#" class="btn">Work with us</a>
+            </div>
+          </div>
+          <img
+            src="./images/page-home/home-main-bg.svg"
+            alt="main image"
+            class="main__image" />
+        </div>
+      </section>
+      <!-- brands -->
+      @@include("html/_brands.html", {})
+      <!-- productsline -->
+      <section class="productsline">
+        <div class="container">
+          <h2 class="title productsline__title">Our line of products</h2>
+          <div class="subtitle productsline__subtitle">
+            Here's what we're building to help businesses deliver amazing
+            customer experiences.
+          </div>
+          <div class="productsline__items">
+            <div class="productsline__item">
+              <div class="productsline__item-logo">
+                <img
+                  src="./images/products/cookieyes.svg"
+                  alt="cookieyes"
+                  class="productsline__item-logo-image" />
+                <div class="productsline__item-description"></div>
+                <a href="#" class="btn productsline__item-btn"></a>
+                <img
+                  src="./images/products/cookieyes-review.png"
+                  alt="cookieyes-review"
+                  class="productsline__item-review" />
+              </div>
+              <div class="productsline__item-logo">
+                <img
+                  src="./images/products/webtoffee.svg"
+                  alt="webtoffee"
+                  class="productsline__item-logo-image" />
+                <div class="productsline__item-description"></div>
+                <a href="#" class="btn productsline__item-btn"></a>
+                <img
+                  src="./images/products/webtoffee-review.png"
+                  alt="webtoffee-review"
+                  class="productsline__item-review" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
     @@include("html/_footer.html", {})
   </body>

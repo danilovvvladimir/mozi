@@ -1,0 +1,14 @@
+.brands {
+  padding-top: 101px;
+  padding-bottom: 128px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
