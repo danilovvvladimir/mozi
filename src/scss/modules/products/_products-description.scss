@@ -22,7 +22,7 @@
   &__block-info {
     margin-bottom: 30px;
     p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
   &__block-btn {
@@ -30,5 +30,41 @@
   }
   &__block-imagebox {
     width: 500px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .products-description {
+    &__block-imagebox {
+      max-width: 300px;
+    }
+    &__block-image {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 993px) {
+  .products-description {
+    &__block {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+    }
+    &__block-btn {
+      margin-bottom: 30px;
+    }
+    &__block-logo {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .products-description {
+    &__block-imagebox {
+      width: 80%;
+    }
   }
 }

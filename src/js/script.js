@@ -12,8 +12,7 @@ hamburger.addEventListener("click", (e) => {
 });
 
 menu.addEventListener("click", (e) => {
-  console.log(e.target);
-  if (e.currentTarget === menu) {
+  if (e.currentTarget === menu && hamburger.classList.contains("is-active")) {
     menu.style.display = "none";
     hamburger.classList.remove("is-active");
   }
