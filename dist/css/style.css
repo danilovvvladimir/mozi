@@ -938,6 +938,8 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   padding: 14px 32px;
@@ -1557,7 +1559,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 180px;
+  position: relative;
+  z-index: 10;
 }
 .productsline__item-btn svg {
   margin-right: 10px;
@@ -1573,6 +1577,7 @@ body {
 .productsline__item-review {
   position: absolute;
   bottom: 0;
+  z-index: 1;
   left: 15px;
   right: 15px;
 }
@@ -1904,4 +1909,81 @@ body {
   .join__image {
     margin: 0 auto;
   }
+}
+.products__main .main__imagebox {
+  right: 200px;
+}
+.products__main .main__content {
+  padding-top: 272px;
+  padding-bottom: 150px;
+}
+
+.products-description {
+  padding-top: 105px;
+  padding-bottom: 75px;
+}
+.products-description__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products-description__block:first-child {
+  margin-bottom: 110px;
+}
+.products-description__block-content {
+  max-width: 470px;
+}
+.products-description__block-logo {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+.products-description__block-logo-image {
+  width: 100%;
+}
+.products-description__block-info {
+  margin-bottom: 30px;
+}
+.products-description__block-info p {
+  margin-bottom: 15px;
+}
+.products-description__block-btn {
+  display: inline-block;
+}
+.products-description__block-imagebox {
+  width: 500px;
+}
+
+.future {
+  padding: 136px 0;
+  background: -o-linear-gradient(107.88deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+  background: linear-gradient(342.12deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+}
+.future__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.future__title {
+  text-align: center;
+  line-height: 62px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.future__subtitle {
+  margin-bottom: 40px;
+}
+.future__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
 }

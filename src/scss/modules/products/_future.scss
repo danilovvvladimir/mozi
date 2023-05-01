@@ -1,0 +1,27 @@
+.future {
+  padding: 136px 0;
+  background: linear-gradient(
+    342.12deg,
+    #e3e7f6 -6.53%,
+    rgba(227, 231, 246, 0) 87.81%
+  );
+  &__wrapper {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  &__title {
+    text-align: center;
+    line-height: 62px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}

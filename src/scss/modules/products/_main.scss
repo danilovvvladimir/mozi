@@ -1,0 +1,11 @@
+.products__main {
+  .main {
+    &__imagebox {
+      right: 200px;
+    }
+    &__content {
+      padding-top: 272px;
+      padding-bottom: 150px;
+    }
+  }
+}

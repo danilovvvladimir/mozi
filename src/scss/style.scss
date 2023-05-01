@@ -6,9 +6,14 @@
 
 @import "./modules/header";
 @import "./modules/footer";
-@import "./modules/main";
+// home
+@import "./modules/home/main";
 @import "./modules/brands";
-@import "./modules/productsline";
-@import "./modules/awards";
-@import "./modules/innovations";
-@import "./modules/join";
+@import "./modules/home/productsline";
+@import "./modules/home/awards";
+@import "./modules/home/innovations";
+@import "./modules/home/join";
+// products
+@import "./modules/products/main";
+@import "./modules/products/products-description";
+@import "./modules/products/future";
