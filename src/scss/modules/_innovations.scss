@@ -39,6 +39,27 @@
       rotate: 180deg;
     }
   }
-  &__button--next {
+}
+
+@media only screen and (max-width: 1200px) {
+  .innovations {
+    &__slide-content {
+      width: 180px;
+      height: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .innovations {
+    &__slide-content {
+      width: 200px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .innovations {
+    &__slide-content {
+      width: 100%;
+    }
   }
 }
