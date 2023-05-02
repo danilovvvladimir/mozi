@@ -1,0 +1,42 @@
+.about-culture {
+  padding-top: 65px;
+  background: linear-gradient(
+    268.52deg,
+    #e3e7f6 -52.27%,
+    rgba(227, 231, 246, 0) 138.23%
+  );
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 95px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+  &__item {
+    width: 330px;
+    height: 278px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+      0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+  }
+  &__item-title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 31px;
+    color: #3a3a3c;
+  }
+  &__item-description {
+    font-size: 16px;
+    line-height: 27px;
+    color: #484c63;
+  }
+}

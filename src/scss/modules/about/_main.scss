@@ -1,0 +1,15 @@
+.about-main {
+  &__content {
+    max-width: 390px;
+  }
+  &__imagebox {
+    padding-top: 100px;
+    position: initial;
+    max-width: 600px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

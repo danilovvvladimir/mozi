@@ -1,0 +1,31 @@
+.about-numbers {
+  padding-bottom: 80px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    padding: 53px 98px;
+    position: relative;
+    width: 318px;
+    height: 318px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+      0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    text-align: center;
+  }
+  &__item-title {
+    margin-bottom: 20px;
+  }
+  &__item-subtitle {
+    margin-bottom: 15px;
+  }
+  &__item-img {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
