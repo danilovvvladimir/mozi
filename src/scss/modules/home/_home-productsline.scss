@@ -1,4 +1,4 @@
-.productsline {
+.home-productsline {
   padding-top: 106px;
   padding-bottom: 108px;
   border-top: 1px solid rgba(197, 203, 226, 0.5);
@@ -62,7 +62,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .productsline {
+  .home-productsline {
     &__item {
       margin: 0 auto;
       height: 400px;
@@ -81,7 +81,7 @@
   }
 }
 @media only screen and (max-width: 993px) {
-  .productsline {
+  .home-productsline {
     &__items {
       flex-wrap: wrap;
     }
@@ -98,7 +98,7 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .productsline {
+  .home-productsline {
     padding-top: 90px;
     padding-bottom: 70px;
     &__subtitle {

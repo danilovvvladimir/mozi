@@ -1,4 +1,4 @@
-.innovations {
+.home-innovations {
   padding-top: 120px;
   padding-bottom: 30px;
   &__title {
@@ -42,7 +42,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .innovations {
+  .home-innovations {
     &__slide-content {
       width: 180px;
       height: 100px;
@@ -50,14 +50,14 @@
   }
 }
 @media only screen and (max-width: 992px) {
-  .innovations {
+  .home-innovations {
     &__slide-content {
       width: 200px;
     }
   }
 }
 @media only screen and (max-width: 480px) {
-  .innovations {
+  .home-innovations {
     &__slide-content {
       width: 100%;
     }
