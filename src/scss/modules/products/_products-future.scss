@@ -1,4 +1,4 @@
-.future {
+.products-future {
   padding: 136px 0;
   background: linear-gradient(
     342.12deg,
@@ -27,7 +27,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .future {
+  .products-future {
     padding: 100px 0;
     &__title {
       line-height: 50px;
@@ -35,7 +35,7 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .future {
+  .products-future {
     padding: 100px 0;
     &__title {
       line-height: 30px;
