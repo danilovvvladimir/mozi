@@ -15,7 +15,8 @@
   }
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    // justify-content: space-between;
     flex-wrap: wrap;
     gap: 36px;
   }
@@ -39,4 +40,32 @@
     line-height: 27px;
     color: #484c63;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-culture {
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      width: 250px;
+      height: 250px;
+      text-align: center;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__item-description {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
 }

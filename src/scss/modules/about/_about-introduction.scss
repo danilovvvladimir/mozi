@@ -37,7 +37,7 @@
         height: 320px;
         position: absolute;
         left: auto;
-        right: -80px;
+        right: -50px;
         bottom: -70px;
         top: auto;
         background-image: url(../../../images/decoration/decoration-about-we-are.svg);
@@ -66,5 +66,44 @@
     border-radius: 8px;
     margin: 0 auto;
     z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-introduction {
+    &__block-imagebox {
+      width: 400px;
+    }
+  }
+}
+@media only screen and (max-width: 993px) {
+  .about-introduction {
+    &__block {
+      flex-direction: column-reverse;
+    }
+    &__block--accent {
+      flex-direction: column;
+    }
+    &__block-content {
+      max-width: 80%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__block-imagebox {
+      width: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-introduction {
+    &__block {
+      padding: 50px 0;
+    }
+    &__block-imagebox {
+      width: 280px;
+      &::before {
+        display: none;
+      }
+    }
   }
 }

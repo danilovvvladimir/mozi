@@ -34,3 +34,47 @@
     }
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .about-hiring {
+    &__imagebox {
+      max-width: 400px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-hiring {
+    &__imagebox {
+      max-width: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-hiring {
+    &__wrapper {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__content {
+      margin-bottom: 70px;
+    }
+    &__imagebox {
+      max-width: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-hiring {
+    &__content {
+      margin-bottom: 20px;
+    }
+    &__button {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

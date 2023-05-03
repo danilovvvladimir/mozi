@@ -1013,8 +1013,8 @@ body {
     line-height: 28px;
   }
   .subtitle {
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .header {
@@ -2132,6 +2132,29 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .about-numbers__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-numbers__items {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-numbers__item {
+    padding: 10px 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+}
 .about-culture {
   padding-top: 65px;
   background: -o-linear-gradient(181.48deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
@@ -2149,9 +2172,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 36px;
@@ -2177,6 +2200,38 @@ body {
   color: #484c63;
 }
 
+@media only screen and (max-width: 768px) {
+  .about-culture__subtitle {
+    margin-bottom: 20px;
+  }
+  .about-culture__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+  }
+  .about-culture__item-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about-culture__item-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .about-introduction__wrapper {
   background: -o-linear-gradient(181.48deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
   background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
@@ -2216,7 +2271,7 @@ body {
   height: 320px;
   position: absolute;
   left: auto;
-  right: -80px;
+  right: -50px;
   bottom: -70px;
   top: auto;
   background-image: url(../../../images/decoration/decoration-about-we-are.svg);
@@ -2243,6 +2298,44 @@ body {
   z-index: 10;
 }
 
+@media only screen and (max-width: 1200px) {
+  .about-introduction__block-imagebox {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .about-introduction__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-introduction__block--accent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-introduction__block-content {
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .about-introduction__block-imagebox {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-introduction__block {
+    padding: 50px 0;
+  }
+  .about-introduction__block-imagebox {
+    width: 280px;
+  }
+  .about-introduction__block-imagebox::before {
+    display: none;
+  }
+}
 .about-hiring {
   padding: 110px 0 80px 0;
   background: -o-linear-gradient(197.09deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
@@ -2281,4 +2374,47 @@ body {
   position: absolute;
   bottom: -75px;
   right: -135px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-hiring__imagebox {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-hiring__imagebox {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-hiring__wrapper {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-hiring__content {
+    margin-bottom: 70px;
+  }
+  .about-hiring__imagebox {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-hiring__content {
+    margin-bottom: 20px;
+  }
+  .about-hiring__button::after {
+    display: none;
+  }
 }
