@@ -1,0 +1,107 @@
+.career-offers {
+  padding-top: 125px;
+  padding-bottom: 42px;
+  background-color: #fff;
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 95px;
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+  &__item {
+    width: 330px;
+    height: 278px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+      0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+  }
+  &__item-title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 31px;
+    color: #3a3a3c;
+    padding-left: 54px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../../../images/icons/flexibility.svg);
+      background-repeat: no-repeat;
+    }
+    &--flexibility {
+      &::before {
+        background-image: url(../../../images/icons/flexibility.svg);
+      }
+    }
+    &--learning {
+      &::before {
+        background-image: url(../../../images/icons/learning.svg);
+      }
+    }
+    &--wellbeing {
+      &::before {
+        background-image: url(../../../images/icons/wellbeing.svg);
+      }
+    }
+    &--perks {
+      &::before {
+        background-image: url(../../../images/icons/perks.svg);
+      }
+    }
+    &--growth {
+      &::before {
+        background-image: url(../../../images/icons/growth.svg);
+      }
+    }
+    &--network {
+      &::before {
+        background-image: url(../../../images/icons/network.svg);
+      }
+    }
+  }
+  &__item-description {
+    font-size: 16px;
+    line-height: 27px;
+    color: #484c63;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .career-offers {
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      width: 250px;
+      height: 250px;
+      text-align: center;
+    }
+
+    &__item-description {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

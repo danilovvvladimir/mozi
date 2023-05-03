@@ -2418,3 +2418,168 @@ body {
     display: none;
   }
 }
+.career-main__imagebox {
+  right: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .career-main__imagebox {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .career-main__content {
+    padding-top: 200px;
+  }
+}
+.career-offers {
+  padding-top: 125px;
+  padding-bottom: 42px;
+  background-color: #fff;
+}
+.career-offers__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.career-offers__subtitle {
+  text-align: center;
+  margin-bottom: 95px;
+}
+.career-offers__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 36px;
+}
+.career-offers__item {
+  width: 330px;
+  height: 278px;
+  padding: 40px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+}
+.career-offers__item-title {
+  margin-bottom: 32px;
+  font-size: 28px;
+  line-height: 31px;
+  color: #3a3a3c;
+  padding-left: 54px;
+  position: relative;
+}
+.career-offers__item-title::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../../../images/icons/flexibility.svg);
+  background-repeat: no-repeat;
+}
+.career-offers__item-title--flexibility::before {
+  background-image: url(../../../images/icons/flexibility.svg);
+}
+.career-offers__item-title--learning::before {
+  background-image: url(../../../images/icons/learning.svg);
+}
+.career-offers__item-title--wellbeing::before {
+  background-image: url(../../../images/icons/wellbeing.svg);
+}
+.career-offers__item-title--perks::before {
+  background-image: url(../../../images/icons/perks.svg);
+}
+.career-offers__item-title--growth::before {
+  background-image: url(../../../images/icons/growth.svg);
+}
+.career-offers__item-title--network::before {
+  background-image: url(../../../images/icons/network.svg);
+}
+.career-offers__item-description {
+  font-size: 16px;
+  line-height: 27px;
+  color: #484c63;
+}
+
+@media only screen and (max-width: 768px) {
+  .career-offers__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+  }
+  .career-offers__item-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .career-offers__item-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.career-looking {
+  padding: 136px 0;
+  background: -o-linear-gradient(107.88deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+  background: linear-gradient(342.12deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+}
+.career-looking__wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+.career-looking__title {
+  text-align: center;
+  line-height: 62px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.career-looking__subtitle {
+  margin-bottom: 40px;
+}
+.career-looking__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .career-looking {
+    padding: 100px 0;
+  }
+  .career-looking__title {
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .career-looking {
+    padding: 100px 0;
+  }
+  .career-looking__title {
+    line-height: 30px;
+  }
+}
