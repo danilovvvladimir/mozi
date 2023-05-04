@@ -1,0 +1,68 @@
+.recommendations {
+  background: #f7f8ff;
+  box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+    0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+  padding: 35px 135px 35px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    padding-left: 136px;
+    position: relative;
+    max-width: 443px;
+    &::before {
+      content: "";
+      width: 109px;
+      height: 109px;
+      background-image: url(../../images/page-career/career-recommendation-level.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__rating {
+    font-size: 36px;
+    line-height: 62px;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-stars {
+      margin-bottom: 6px;
+    }
+  }
+  &__link {
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-right: 24px;
+    color: $text-color;
+    position: relative;
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url(../../images/icons/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      filter: grayscale(1);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

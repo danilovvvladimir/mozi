@@ -6,9 +6,11 @@
 
 @import "./modules/header";
 @import "./modules/footer";
+@import "./modules/brands";
+@import "./modules/recommendations";
 // home
 @import "./modules/home/main";
-@import "./modules/brands";
+@import "./modules/career/career-life";
 @import "./modules/home/home-productsline";
 @import "./modules/home/home-awards";
 @import "./modules/home/home-innovations";
@@ -27,3 +29,5 @@
 @import "./modules/career/career-main";
 @import "./modules/career/career-offers";
 @import "./modules/career/career-looking";
+@import "./modules/career/career-life";
+@import "./modules/career/career-pack";

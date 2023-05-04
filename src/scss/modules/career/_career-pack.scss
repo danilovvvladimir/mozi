@@ -1,0 +1,71 @@
+.career-pack {
+  padding-top: 56px;
+  padding-bottom: 44px;
+  .recommendations {
+    margin-bottom: 120px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__roles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  &__role {
+    height: 148px;
+    padding: 35px 60px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+      0px 17px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 30px;
+  }
+  &__role-description {
+    display: flex;
+    gap: 10px;
+  }
+  &__role-time,
+  &__role-location {
+    position: relative;
+    padding-left: 27px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #8f90a6;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 22px;
+      height: 22px;
+      transform: translateY(-50%);
+      background-image: url(../../../images/icons/time.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__role-location {
+    &::before {
+      background-image: url(../../../images/icons/location.svg);
+    }
+  }
+  &__role-title {
+    font-size: 28px;
+    line-height: 27px;
+    color: $text-color;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  &__btns {
+    text-align: center;
+  }
+}
