@@ -4,6 +4,7 @@
 @import "./utility/libs";
 @import "./utility/global";
 
+// global sections
 @import "./modules/header";
 @import "./modules/footer";
 @import "./modules/brands";
@@ -31,3 +32,6 @@
 @import "./modules/career/career-looking";
 @import "./modules/career/career-life";
 @import "./modules/career/career-pack";
+// contanct
+@import "./modules/contact/contact-main";
+@import "./modules/contact/contact-form";

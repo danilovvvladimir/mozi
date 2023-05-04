@@ -5,9 +5,8 @@
     <title>Mozi - Contact</title>
     <meta
       name="description"
-      content="Mozi is a technology company that builds products to simplify work. 
-      1.3 million businesses of every size — from startups to global brands, 
-      use our tools to work better." />
+      content="We'd love to hear from you. Fill out this form and we'll get back to
+      you. For job related queries, click on the button below." />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -39,7 +38,27 @@
   <body>
     <!-- header -->
     @@include("html/_header.html", {})
-
+    <!-- main -->
+    <section class="main contact-main">
+      <div class="container">
+        <div class="main__content contact-main__content">
+          <h1 class="title main__title contact-main__title">Connect with us</h1>
+          <div class="subtitle main__subtitle contact-main__subtitle">
+            We'd love to hear from you. Fill out this form and we'll get back to
+            you. For job related queries, click on the button below.
+          </div>
+          <div class="main__buttons contact-main__buttons">
+            <a href="#" class="btn">Work with us</a>
+          </div>
+        </div>
+        <div class="main__imagebox contact-main__imagebox">
+          <img
+            src="./images/page-contact/contact-main-bg.svg"
+            alt="main image"
+            class="main__image contact-main__image" />
+        </div>
+      </div>
+    </section>
     <!-- footer -->
     @@include("html/_footer.html", {})
   </body>
