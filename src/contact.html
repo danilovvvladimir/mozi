@@ -38,27 +38,115 @@
   <body>
     <!-- header -->
     @@include("html/_header.html", {})
-    <!-- main -->
-    <section class="main contact-main">
-      <div class="container">
-        <div class="main__content contact-main__content">
-          <h1 class="title main__title contact-main__title">Connect with us</h1>
-          <div class="subtitle main__subtitle contact-main__subtitle">
-            We'd love to hear from you. Fill out this form and we'll get back to
-            you. For job related queries, click on the button below.
+
+    <main class="contact">
+      <!-- main -->
+      <section class="main contact-main">
+        <div class="container">
+          <div class="main__content contact-main__content">
+            <h1 class="title main__title contact-main__title">
+              Connect with us
+            </h1>
+            <div class="subtitle main__subtitle contact-main__subtitle">
+              We'd love to hear from you. Fill out this form and we'll get back
+              to you. For job related queries, click on the button below.
+            </div>
+            <div class="main__buttons contact-main__buttons">
+              <a href="#" class="btn">Work with us</a>
+            </div>
           </div>
-          <div class="main__buttons contact-main__buttons">
-            <a href="#" class="btn">Work with us</a>
+          <div class="main__imagebox contact-main__imagebox">
+            <img
+              src="./images/page-contact/contact-main-bg.svg"
+              alt="main image"
+              class="main__image contact-main__image" />
           </div>
         </div>
-        <div class="main__imagebox contact-main__imagebox">
-          <img
-            src="./images/page-contact/contact-main-bg.svg"
-            alt="main image"
-            class="main__image contact-main__image" />
+      </section>
+
+      <section class="contact-letter">
+        <div class="container">
+          <h2 class="title contact-letter__title">Contact Us</h2>
+          <div class="contact-letter__wrapper">
+            <form class="form contact-letter__form">
+              <label class="form__label contact-letter__form-label">
+                <span class="form__label-name contact-letter__form-label-name">
+                  Name*
+                </span>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  class="form__input contact-letter__form-input" />
+              </label>
+              <label class="form__label contact-letter__form-label">
+                <span class="form__label-name contact-letter__form-label-name">
+                  Email*
+                </span>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="form__input contact-letter__form-input" />
+              </label>
+              <label class="form__label contact-letter__form-label">
+                <span class="form__label-name contact-letter__form-label-name">
+                  Subject
+                </span>
+                <input
+                  type="text"
+                  name="subject"
+                  required
+                  class="form__input contact-letter__form-input" />
+              </label>
+              <label class="form__label contact-letter__form-label">
+                <span class="form__label-name contact-letter__form-label-name">
+                  Message*
+                </span>
+                <textarea
+                  name="message"
+                  class="form__textarea contact-letter__form-textarea"></textarea>
+              </label>
+              <button class="btn btn--filled">Send</button>
+            </form>
+            <div class="contact-letter__address">
+              <div class="contact-letter__address-block">
+                <div
+                  class="contact-letter__address-block-city contact-letter__address-block-city--uk">
+                  London
+                </div>
+                <div class="contact-letter__address-block-street">
+                  Mozi Limited 3 Warren Yard, Wolverton Mill Milton Keynes
+                  England UK – MK12 5NW
+                </div>
+              </div>
+              <div class="contact-letter__address-block">
+                <div
+                  class="contact-letter__address-block-city contact-letter__address-block-city--india">
+                  Mumbai
+                </div>
+                <div class="contact-letter__address-block-street">
+                  Mozi Technologies Pvt Ltd First Floor, Sahya Building, Govt.
+                  Cyberpark, Nellikode P.O. Kozhikode, Kerala, India – 673016
+                </div>
+              </div>
+              <div class="contact-letter__address">
+                <div class="contact-letter__address-block">
+                  <div
+                    class="contact-letter__address-block-city contact-letter__address-block-city--india">
+                    Bangalore
+                  </div>
+                  <div class="contact-letter__address-block-street">
+                    Mozi Technologies Pvt Ltd Brigade IRV Centre Nallurahalli
+                    Whitefield Bengaluru, Karnataka India – 560066
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <!-- footer -->
     @@include("html/_footer.html", {})
   </body>

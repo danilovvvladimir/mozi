@@ -50,6 +50,13 @@
       }
     }
   }
+  &__list-item-link--active {
+    color: $accent-color;
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
 
 .hamburger {
